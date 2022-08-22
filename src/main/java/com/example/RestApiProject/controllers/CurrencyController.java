@@ -1,12 +1,12 @@
 package com.example.RestApiProject.controllers;
 
+import com.example.RestApiProject.model.Query;
+import com.example.RestApiProject.model.Result;
 import com.example.RestApiProject.service.CurrencyService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.Currency;
 import java.util.List;
 
 @RestController
@@ -16,8 +16,9 @@ public class CurrencyController {
     @Autowired
     private CurrencyService currencyService;
 
-    @GetMapping("/controller")
-    public Object[] getCurrencies(@RequestParam String from,@RequestParam String to,@RequestParam int amount ) {
-        return currencyService.getCurrency(from, to, amount);
+    @PostMapping("/convert")
+    public Result getCurrencies(@RequestBody Query currency) {
+        return currencyService.getCurrency(currency);
     }
+
 }
