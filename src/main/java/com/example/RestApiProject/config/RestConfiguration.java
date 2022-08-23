@@ -8,9 +8,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class RestConfiguration {
 
     private String baseUrl;
-    private String from;
-    private String to;
-    private String amount;
+    private String convert;
 
 
 }

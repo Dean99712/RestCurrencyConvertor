@@ -15,7 +15,7 @@ public class WebClientConfiguration {
     public WebClient webClient() {
 
         return WebClient.builder()
-                .baseUrl("https://api.exchangerate.host")
+                .baseUrl(configuration.getBaseUrl())
                 .build();
     }
 }
