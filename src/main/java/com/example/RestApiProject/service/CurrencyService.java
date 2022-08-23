@@ -3,7 +3,6 @@ package com.example.RestApiProject.service;
 import com.example.RestApiProject.config.RestConfiguration;
 import com.example.RestApiProject.config.WebClientConfiguration;
 import com.example.RestApiProject.model.Query;
-import com.example.RestApiProject.model.Info;
 import com.example.RestApiProject.model.Result;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
