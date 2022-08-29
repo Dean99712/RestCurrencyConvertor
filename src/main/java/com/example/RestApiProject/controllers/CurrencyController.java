@@ -1,7 +1,6 @@
 package com.example.RestApiProject.controllers;
 
 import com.example.RestApiProject.model.Query;
-import com.example.RestApiProject.model.Info;
 import com.example.RestApiProject.model.Result;
 import com.example.RestApiProject.service.CurrencyService;
 import org.springframework.beans.factory.annotation.Autowired;
